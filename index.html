@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Laura strona</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <p>Jak masz na imię??? ;] </p>
+        <input id="nameinput" type="text" placeholder="Wpisz tu swoje imię">
+        <button type="button" onclick="nameCheck()">Przejdź</button><br>
+        <img id="successphoto" style="display: none;" src="https://media.tenor.com/RVC8vW63M6YAAAAM/emoji-fudido.gif"/>
+        <script>
+            function nameCheck()
+            {
+                let imie = document.getElementById("nameinput").value;
+                if (imie.toLowerCase() == "laura")
+                {
+                    window.location = "https://google.com/";
+                }
+                else
+                {
+                    document.getElementById('successphoto').style = "";
+                    alert("Jesteś super, " + imie + "! :-)");
+                }
+            }
+        </script>
+    </body>
+</html>
